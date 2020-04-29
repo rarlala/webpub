@@ -4,12 +4,12 @@ body {
 }
 
 section {
-    margin: 0 auto;
+    margin: 0 auto 100px;
     text-align: center;
 }
 
 
-/* 중간 정렬 */
+/* 영역 중간 정렬 */
 
 .content,
 .text-area,
@@ -18,12 +18,8 @@ figure {
     margin: 0 auto;
 }
 
-.bg-image {
-    height: 540px;
-    margin: 40px 0 50px;
-    background: url('./img/bg_coffeebean-korea_banner02.jpg') no-repeat center;
-    background-size: cover;
-}
+
+/* content 영역*/
 
 .text1 {
     font-size: 20px;
@@ -36,15 +32,33 @@ figure {
     font-size: 32px;
 }
 
+
+/* img 영역 */
+
+.bg-image {
+    height: 540px;
+    margin: 40px 0 50px;
+    background: url('./img/bg_coffeebean-korea_banner02.jpg') no-repeat center;
+    background-size: cover;
+}
+
 h2 {
     color: rgb(207, 102, 26);
     font-size: 2.6rem;
     font-weight: 100;
 }
 
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
 .bar {
     color: #ccc;
 }
+
+
+/* text-area 영역 */
 
 .text-area h2 {
     position: relative;
@@ -75,6 +89,9 @@ strong {
     padding: 15px 100px;
     word-break: keep-all;
 }
+
+
+/* figure 영역 */
 
 figure img {
     width: 32%;
