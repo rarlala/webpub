@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* 중간 정렬 */
+
+.content,
+.text-area,
+figure {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.bg-image {
+    height: 540px;
+    margin: 40px 0 50px;
+    background: url('./img/bg_coffeebean-korea_banner02.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.text1 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.text2 {
+    margin: 20px 0;
+    color: rgb(207, 102, 26);
+    font-size: 32px;
+}
+
+h2 {
+    color: rgb(207, 102, 26);
+    font-size: 2.6rem;
+    font-weight: 100;
+}
+
+.bar {
+    color: #ccc;
+}
+
+.text-area h2 {
+    position: relative;
+}
+
+.text-area h2 span:first {
+    background: #fff;
+}
+
+.text-area h2::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+}
+
+strong {
+    color: rgb(207, 102, 26);
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.text-area p {
+    padding: 15px 100px;
+    word-break: keep-all;
+}
+
+figure img {
+    width: 32%;
+}
+
+figure img {
+    margin-right: 5px;
+}
+
+.a11y-hidden {
+    visibility: hidden;
+}
