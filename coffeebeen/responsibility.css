@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #585858;
+}
+
+h2,
+p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 100;
+    color: #cf661a;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.main-visual {
+    height: 545px;
+    background-image: url('img/responsibility/img_responsibility01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 65px 0;
+}
+
+.content1 {
+    text-align: center;
+    border-bottom: 1px solid purple;
+}
+
+.content1 img {
+    margin-bottom: 20px;
+}
+
+.content1>h2 {
+    font-family: 'Slabo 27', serif;
+    font-size: 42px;
+    font-weight: 100;
+    color: #cf661a;
+}
+
+.content1>p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.support img {
+    width: 160px;
+    margin: 20px 20px 0 20px;
+}
+
+.support span::after {
+    content: '';
+    display: inline-block;
+    background: url(img/responsibility/bg_plus_icon.gif) no-repeat center;
+    width: 41px;
+    height: 160px;
+    /* line-height: 41px; */
+}
+
+.support span:last-child::after {
+    content: '';
+    background-image: none;
+}
+
+.content2 {
+    border-bottom: 1px solid #ccc;
+    background: url('./img/responsibility/img_responsibility02_1.jpg') no-repeat left 70px;
+    background-size: 540px;
+}
+
+.content2 .inner {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.mov {
+    margin-top: 100px;
+}
+
+.content3 {
+    background: url(./img/responsibility/img_responsibility02_2.jpg) no-repeat right center;
+    margin: 0 auto;
+}
+
+.content3 .inner {
+    width: 50%;
+}
+
+.banner {
+    background: url(./img/responsibility/img_responsibility03.jpg) no-repeat center;
+    height: 540px;
+}
+
+.data {
+    text-align: center;
+}
+
+
+/* css 함축형
+
+font: style weight size/line-height family 
+- size와 line-height는 /로 구분한다.
+- font의 함축형 선언시 반드시 font-size와 font-family는 포함해야함.
+
+backgroud: color url repeat attachment position/size
+
+border: width style color
+*/
