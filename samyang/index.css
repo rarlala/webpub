@@ -1,0 +1,180 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#wrap {
+    width: 950px;
+    overflow: visible;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.nav-bar {
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.nav-bar h1 {
+    background: #209dcb;
+    color: #fff;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.nav-bar ul li {
+    border-bottom: 1px solid #ccc;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+
+/* -------- content area --------*/
+
+.contents {
+    width: 75%;
+    height: 100vh;
+    float: right;
+}
+
+.location {
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    font-size: 11px;
+}
+
+.top-contents {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.top-contents h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.top-contents .text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+
+/* -------- bottom content area --------*/
+
+.bottom-contents {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.bottom-contents div:nth-child(2n) {
+    margin-left: 2%;
+}
+
+.content-title {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: 50px 0 30px;
+    z-index: -1;
+    color: transparent;
+    font-size: 0;
+}
+
+.trust {
+    background-image: url(./img/aboutus_value03.gif);
+    width: 165px;
+    height: 45px;
+}
+
+.challenge {
+    background-image: url(./img/aboutus_value03.gif);
+    background-position: 0 -46px;
+    width: 165px;
+    height: 45px;
+}
+
+.innovation {
+    background-image: url(./img/aboutus_value03.gif);
+    background-position: 0 -92px;
+    width: 165px;
+    height: 45px;
+}
+
+.human {
+    background-image: url(./img/aboutus_value03.gif);
+    background-position: 0 -138px;
+    width: 165px;
+    height: 45px;
+}
+
+.customer {
+    background-image: url(./img/aboutus_value03.gif);
+    background-position: 0 -184px;
+    width: 165px;
+    height: 45px;
+}
+
+.result {
+    background-image: url(./img/aboutus_value03.gif);
+    background-position: 0 -232 px;
+    width: 165px;
+    height: 45px;
+}
+
+.content {
+    width: 48%;
+}
+
+.content-sub-title {
+    font-weight: bold;
+    color: #444;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+
+.content p:nth-of-type(2) {
+    font-size: 13px;
+}
