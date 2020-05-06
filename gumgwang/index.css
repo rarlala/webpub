@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font: 15px 'Noto Sans KR', 'sans-serif';
+    color: #585858;
+}
+
+.container {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.container>h2 {
+    font-size: 34px;
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.pro-list {
+    margin-top: 40px;
+    background-color: gold;
+}
+
+.pro-list a {
+    display: block;
+}
+
+.pro-list li>h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+}
+
+.pro-list li {
+    float: left;
+    width: 360px;
+    margin-right: 60px;
+}
+
+.pro-list li:last-child {
+    margin-right: 0;
+}
+
+.pro-list li a {
+    height: 400px;
+    overflow: hidden;
+}
+
+.pro-list li img {
+    width: 360px;
+    transition: transform 1s;
+}
+
+.pro-list li:hover img {
+    transform: scale(1.15);
+    transition: 0.1;
+}
+
+.pro-list p {
+    text-align: right;
+}
+
+.pro-list .tit-list span {
+    display: block;
+}
