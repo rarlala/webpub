@@ -1,0 +1,142 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/1.jpg) no-repeat center;
+    background-size: cover;
+    height: 380px;
+}
+
+.tit-area {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+
+.category {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.category span {
+    background: #fff;
+    border-radius: 50px;
+    padding: 3px 8px;
+    text-align: left;
+    font-size: 12px;
+    color: #222;
+    margin-right: 5px;
+}
+
+.tit-area h1 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 32px;
+    margin-bottom: 15px;
+    word-break: keep-all;
+}
+
+.tit-info {
+    color: #eee;
+    position: relative;
+    margin-left: 60px;
+}
+
+.tit-info:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(yellowgreen 50%, green 50%);
+    border-radius: 50%;
+}
+
+.tit-info .follower {
+    color: yellowgreen;
+}
+
+main {
+    width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+aside li {
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    color: #222;
+    font-size: 15px;
+}
+
+aside li.active {
+    color: green;
+}
+
+section {
+    float: right;
+    width: 70%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+section h1 {
+    text-align: left;
+    margin: 0 0 20px 20px;
+    font-weight: normal;
+    position: relative;
+}
+
+section h1:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    width: 10px;
+    height: 30px;
+    margin-right: 10px;
+    background: linear-gradient( yellowgreen 50%, green 30%);
+}
+
+section img {
+    width: 100%;
+}
+
+section p {
+    margin: 20px 0;
+    padding: 0 50px;
+    text-align: left;
+    color: #222;
+}
+
+.width50-l {
+    width: 49%;
+}
+
+.width50-r {
+    width: 49%;
+}
