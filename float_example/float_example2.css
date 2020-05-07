@@ -1,0 +1,97 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 760px;
+    margin: 50px auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ----- 공통영역 종료 ----- */
+
+.container h2 {
+    margin-bottom: 30px;
+}
+
+.container h2>span {
+    display: inline-block;
+    color: rebeccapurple;
+    border-top: 5px solid purple;
+    padding-top: 10px;
+}
+
+.container .left {
+    float: left;
+    width: 420px;
+}
+
+.container .left li {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.container img {
+    border: 1px solid #222;
+    padding: 2px;
+}
+
+.container .left img {
+    width: 140px;
+    float: left;
+}
+
+.container .left .text {
+    width: 260px;
+    margin-left: 20px;
+    float: right;
+}
+
+.container .text h3 {
+    margin-bottom: 5px;
+}
+
+.container .text strong {
+    color: blue;
+}
+
+.container .text p {
+    color: #222;
+    margin-top: 5px;
+    word-break: keep-all;
+    font-size: 14px;
+}
+
+.container .right {
+    float: right;
+    width: 300px;
+}
+
+.container .right li {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.container .right img {
+    width: 120px;
+    float: left;
+}
+
+.container .right .text {
+    float: right;
+    width: 160px;
+    margin-left: 20px;
+    word-break: keep-all;
+}
