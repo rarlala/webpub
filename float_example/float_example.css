@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header {
+    height: 60px;
+}
+
+
+/* ul li에 float:left 시 ul에 overflow:hidden을 적용한다. */
+
+header>ul {
+    /* overflow: hidden; */
+    font-size: 0;
+}
+
+header>ul li {
+    list-style: none;
+    /* float: left; */
+    display: inline-block;
+    width: 25%;
+    border: 1px solid blue;
+    height: 60px;
+    background: skyblue;
+    border-collapse: collapse;
+}
+
+header>ul li a {
+    background: salmon;
+    text-align: center;
+    display: block;
+    color: #eee;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+header>ul li a:hover {
+    background: purple;
+    color: #fff;
+}
+
+
+/* main */
+
+main {
+    margin: 50px auto 30px;
+    border: 1px solid red;
+    background: orange;
+    /* height: 500px; */
+    padding: 40px;
+    /* overflow: hidden; */
+}
+
+main>aside {
+    width: 20%;
+    height: 300px;
+    background: skyblue;
+    float: left;
+}
+
+main>section {
+    width: 75%;
+    height: 400px;
+    /* 방법 1 */
+    /* float: right; */
+    /* 방법 2 */
+    float: left;
+    margin-left: 50px;
+    background: yellowgreen;
+    margin-bottom: 50px;
+}
+
+
+/* 뒤 요소에 clear:both 주고 내려가려면 그 위 요소에 margin-bottom을 주면 내려간다. 단, main 영역은 높이 값을 인식하지는 못한다.*/
+
+
+/* footer {
+    width: 100%;
+    margin: auto;
+    line-height: 50px;
+    background: purple;
+    clear: both;
+} */
+
+main:after {
+    content: '';
+    clear: both;
+}
