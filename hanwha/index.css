@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+body {
+    font: 15px 'Noto Sans KR', sans-serif;
+    color: #585858;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 960px;
+    margin: 50px auto;
+}
+
+.tabmenu {
+    overflow: hidden;
+    margin: 0 auto 40px;
+    width: 660px;
+}
+
+.tabmenu li {
+    box-sizing: border-box;
+    width: 220px;
+    height: 50px;
+    float: left;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+
+.tabmenu li:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.tabmenu li.active {
+    border-top: 2px solid orange;
+    color: orange;
+}
+
+.tabmenu li:hover {
+    color: orange;
+    position: relative;
+}
+
+.tabmenu li:hover::before {
+    content: '★';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 25%;
+    left: 20%;
+}
+
+.tabmenu li a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.container h2 span,
+.insa dt {
+    color: orange;
+}
+
+.insa>div {
+    border-top: 1px solid #ddd;
+    padding: 30px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.insa>div>dt {
+    float: left;
+    color: orange;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.insa>div>dd {
+    width: 70%;
+    float: right;
+}
+
+.insa>div>dd p {
+    word-break: keep-all;
+}
+
+.insa>div>dd .text-b {
+    font-size: 17px;
+    color: #000;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.insa>div>dd .text-b::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    background: orange;
+}
+
+.insa>div>dd .text {
+    width: 90%;
+    font-size: 14px;
+    word-break: keep-all;
+}
+
+.insa>div>dd .text:last-child {
+    margin-top: 30px;
+}
