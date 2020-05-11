@@ -1,0 +1,377 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 15px 'Noto Sans KR', sans-serif;
+    color: #585858;
+}
+
+h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #222;
+    border-bottom: 1px solid #222;
+}
+
+article {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 30px;
+}
+
+.clear:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    background: yellow;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+
+/* header */
+
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+}
+
+#main-header .inner-header {
+    width: 1200px;
+    height: 100%;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+#main-header .inner-header .logo {
+    float: left;
+    margin-top: 15px;
+}
+
+#main-header .gnb {
+    float: right;
+}
+
+#main-header .gnb ul li {
+    float: left;
+    width: auto;
+    margin: 0 20px;
+}
+
+#main-header .gnb ul li a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    line-height: 80px;
+    color: #fff;
+}
+
+
+/* section */
+
+#main-visual {
+    background: url('img/main-monet.jpg') no-repeat center;
+    box-shadow: inset 0px 40px 20px -0px rgba(13, 21, 135, 0.5);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* height: 860px; */
+    vertical-align: middle;
+    position: relative;
+}
+
+#main-visual article {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#main-visual .title-wrap h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 40%;
+}
+
+#main-visual .title-wrap .btn-area {
+    position: absolute;
+    top: 60%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#main-visual .title-wrap .btn-area a {
+    margin-right: 20px;
+}
+
+#main-visual .title-wrap .btn-area i {
+    margin-left: 5px;
+}
+
+
+/* 만약 font awesome을 :after로 넣는 경우
+  content: '\f144'
+  font-family: 'Font Awesome 5 free'
+*/
+
+
+/* container */
+
+.about .contents {
+    width: 550px;
+    float: left;
+    margin-top: 50px;
+}
+
+.about figure {
+    width: 550px;
+    float: right;
+}
+
+.about figure img {
+    width: 550px;
+}
+
+.contents p {
+    color: #222;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.contents .btn-set {
+    margin-top: 50px;
+}
+
+.contents .btn-set a {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: blue;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* why */
+
+.why {
+    /* background: pink; */
+}
+
+.why ul {}
+
+.why ul li {
+    float: left;
+    width: 270px;
+    margin-right: 40px;
+}
+
+.why ul li:last-child {
+    margin-right: 0;
+}
+
+.why ul li img {
+    width: 270px
+}
+
+.why ul li:first-child {
+    margin-top: 30px;
+}
+
+.why ul li:nth-child(2) {
+    margin-top: -20px;
+}
+
+.why ul li:nth-child(3) {
+    margin-top: 80px;
+}
+
+.why ul li:last-child {
+    margin-top: -50px;
+}
+
+.why ul li h3 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.why ul li h3:after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 free';
+    width: 10px;
+    height: 10px;
+}
+
+.why ul li h3:hover {
+    color: blue;
+    transition: 1s color;
+}
+
+
+/* trip */
+
+.trip {
+    margin-bottom: 50px;
+}
+
+.trip ul {
+    margin-top: 30px;
+}
+
+.trip ul li {
+    width: 220px;
+    float: left;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.trip ul li:last-child {
+    padding-right: 0;
+}
+
+.trip ul li img {
+    width: 220px;
+}
+
+.trip ul li h3 {
+    margin-top: 10px;
+    color: #222;
+}
+
+.trip ul li h3:after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 free';
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background: #393f7d;
+}
+
+.banner .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.banner .container p:first-child {
+    color: skyblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.banner .container p:nth-child(2) {
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner .container p:nth-child(3) {
+    color: #fff;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.banner .container .btn-go {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 20px;
+    color: #fff;
+    background: blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.banner .container .btn-go:after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 free';
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .sns a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #444;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+footer .sns a:last-child {
+    margin-right: 0;
+}
+
+footer .sns a i {
+    color: #fff;
+}
+
+footer ul {
+    margin: 20px 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li:first-child:after {
+    content: '|';
+    margin-left: 10px;
+    margin-right: 10px;
+}
