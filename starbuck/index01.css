@@ -1,0 +1,364 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+/* 공통 영역 */
+
+body {
+    font: 15px 'Noto Sans KR', sans-serif;
+}
+
+
+/* header */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background: #F6F5EF;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ccc;
+    z-index: 10;
+}
+
+header .wrap {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+header .wrap .logo {
+    width: 10%;
+    float: left;
+    margin-top: 20px;
+}
+
+.gnb {
+    float: right;
+    width: 67%;
+    margin: 67px 0 0 0;
+}
+
+.gnb li {
+    display: inline-block;
+    margin-right: 38px;
+    font-size: 14px;
+}
+
+.gnb li:last-child {
+    margin-right: 0;
+}
+
+.tnb {
+    position: absolute;
+    top: 17px;
+    right: 100px;
+    font-size: 12px;
+}
+
+.tnb li {
+    display: inline-block;
+    margin-right: 40px;
+    color: #585858;
+}
+
+.tnb li:last-child {
+    margin-right: 0;
+}
+
+.search-btn {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+
+/* content */
+
+.content {
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.content article {
+    padding-top: 120px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.content article h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+}
+
+.content article .lnb {
+    height: 20px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.content article .lnb li {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.content article .lnb li::after {
+    content: '>';
+    margin: 0 5px;
+}
+
+.content article .lnb li:last-child::after {
+    content: '';
+    margin: 0;
+}
+
+.content article img {
+    margin-bottom: 30px;
+}
+
+.content article .conts p {
+    margin-right: 80px;
+}
+
+.content article .conts p:first-child {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.content article .conts p:nth-child(2) {
+    font-size: 20px;
+    color: green;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.content article .conts p:nth-child(n+3) {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+
+/* res-way */
+
+.res-way {
+    background: #f4f4f2;
+}
+
+.res-way article {
+    width: 1100px;
+    height: 460px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.res-way article h3 {
+    font-weight: bold;
+}
+
+.res-way .res-way-wrap {
+    margin: 30px 0 0;
+}
+
+.res-way-wrap .way-conts1,
+.res-way-wrap .way-conts2 {
+    overflow: hidden;
+}
+
+.res-way-wrap .way-conts1 dt,
+.res-way-wrap .way-conts2 dt {
+    width: 15%;
+    height: 120px;
+    line-height: 120px;
+    color: green;
+}
+
+.res-way-wrap .way-conts2 dt {
+    color: darkred
+}
+
+.res-way-wrap .way-conts1 {
+    position: relative;
+}
+
+.res-way article {
+    position: relative;
+}
+
+.res-way article::before {
+    content: '';
+    position: absolute;
+    background: url(./img/et_plus_bg.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    top: 150px;
+    left: 50%;
+}
+
+.way-conts1 dt,
+.way-conts1 dd,
+.way-conts2 dt,
+.way-conts2 dd {
+    float: left;
+}
+
+.way-conts1 dd,
+.way-conts2 dd {
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    /* position: relative; */
+}
+
+.way-conts1 dd .top,
+.way-conts2 dd .top {
+    background: rgba(43, 105, 55, 0.9);
+    border-radius: 100px;
+    height: 120px;
+    box-sizing: border-box;
+    width: 52.59%;
+    white-space: nowrap;
+    float: left;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.way-conts2 dd .top {
+    background: rgba(80, 46, 30, 0.9);
+}
+
+.way-conts1 dd .top::after,
+.way-conts2 dd .top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.way-conts1 dd .top:first-child::after {
+    background: url(./img/m_et_txt_bg1.png);
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+}
+
+.way-conts1 dd .top:last-child::after {
+    right: 0;
+    background: url(./img/m_et_txt_bg2.png);
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+}
+
+.way-conts2 dd .top:first-child::after {
+    background: url(./img/m_et_txt_bg3.png);
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+}
+
+.way-conts2 dd .top:last-child::after {
+    background: url(./img/m_et_txt_bg4.png);
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+}
+
+.way-conts1 .top:last-child,
+.way-conts2 .top:last-child {
+    margin-left: -50px;
+}
+
+.top {
+    color: #fff;
+}
+
+.top strong,
+.top p {
+    font-weight: normal;
+    padding-left: 100px;
+}
+
+.top p {
+    font-size: 12px;
+}
+
+.way-conts2 {
+    margin-top: 50px;
+}
+
+
+/* content2 */
+
+.content2 article {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.content2 article .top-content .text-area,
+.content2 article .top-content img {
+    width: 50%;
+    float: left;
+}
+
+.content2 article .top-content img {
+    margin-bottom: 20px;
+}
+
+.content2 article .conts-top .top-content .text-area h3,
+.content2 article .conts-bottom h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content2 article .conts-top .top-content .text-area p,
+.content2 article .conts-top .bottom-content .text p,
+.content2 article .conts-bottom .text {
+    font-size: 13px;
+    color: gray;
+}
+
+.content2 article .conts-top .top-content .text-area p:last-child {
+    margin-top: 15px;
+}
+
+.content2 article .conts-top .bottom-content>img,
+.content2 article .conts-top .bottom-content .text {
+    width: 50%;
+}
+
+.content2 article .conts-top .bottom-content .text {
+    box-sizing: border-box;
+    padding-left: 20px;
+    float: right;
+    font-size: 13px;
+}
+
+.content2 article .conts-top .bottom-content .text p:first-child {
+    font-size: 20px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.content2 article .conts-top .bottom-content .text a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.content2 article .conts-bottom {
+    margin-top: 50px;
+}
+
+.content2 article .conts-bottom .text {
+    margin: 30px 0 30px;
+}
