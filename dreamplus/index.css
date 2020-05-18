@@ -123,11 +123,13 @@ header .util li {
     margin-bottom: 30px;
 }
 
-.dream-list {
+.dream-list1,
+.dream-list2 {
     font-size: 0;
 }
 
-.dream-list li {
+.dream-list1 li,
+.dream-list2 li {
     box-sizing: border-box;
     width: 270px;
     display: inline-block;
@@ -137,24 +139,38 @@ header .util li {
     font-size: 1rem;
 }
 
-.dream-list li:nth-child(4n) {
+.dream-list .li {
+    height: 400px;
+    border: 1px solid red;
+}
+
+.dream-list1 li:last-child,
+.dream-list2 li:last-child {
     margin-right: 0;
 }
 
-.dream-list li .dream-type {
+.dream-list1 li .dream-type,
+.dream-list2 li .dream-type {
     font-weight: bold;
     color: blue;
 }
 
-.dream-list li .dream-title {
+.dream-list1 li .dream-title,
+.dream-list2 li .dream-title {
     margin: 10px 0 15px;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-.dream-list li .date {
+.dream-list1 li .date,
+.dream-list2 li .date {
     font-size: 14px;
     color: gray;
+}
+
+.dream-list2 li:first-child,
+.dream-list2 li:last-child {
+    margin-top: -90px;
 }
 
 
@@ -357,7 +373,7 @@ header .util li {
 }
 
 .accelerating .wrap .acceler-list li:hover {
-    background: linear-gradient( rgba(0, 112, 112, 0.5), rgba(0, 112, 112, 0.5)), url('./image/thumbnail\ \(11\).jpeg') no-repeat center;
+    background: linear-gradient(rgba(0, 112, 112, 0.5), rgba(0, 112, 112, 0.5)), url('./image/thumbnail\ \(11\).jpeg') no-repeat center;
     background-size: cover;
     color: #fff;
 }
