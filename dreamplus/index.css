@@ -9,6 +9,21 @@ body {
 }
 
 
+/* 원래 사이트 기본 값 - 추후 수정 시 참고 */
+
+
+/* #main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1250px;
+    max-height: 100px;
+    height: auto;
+    z-index: 100;
+} */
+
+
 /* header 영역 */
 
 .header-wrap {
@@ -73,7 +88,7 @@ header .util li {
     position: absolute;
     top: 50%;
     right: 185px;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     border: none;
     width: 20px;
     height: 20px;
@@ -208,9 +223,14 @@ header .util li {
 /* dreamhous */
 
 .dreamhous {
+    background: url('./image/bg-haus.jpg') no-repeat;
+}
+
+.dreamhous .wrap {
     width: 1200px;
     margin: 0 auto;
-    padding: 50px 0 200px;
+    padding: 100px 0;
+    overflow: hidden;
 }
 
 .dreamhous .text-area {
@@ -244,13 +264,17 @@ header .util li {
     color: #fff;
     border-radius: 30px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.dreamhous .text-area a:last-child {
+    background: #36394a;
 }
 
 .dreamhous .list-area {
     float: right;
     width: 865px;
     font-size: 0;
-    background: yellow;
 }
 
 .dreamhous .list-area li {
@@ -275,4 +299,140 @@ header .util li {
     content: '>';
     font-weight: bold;
     margin-left: 5px;
+}
+
+
+/* accelerating */
+
+.accelerating .wrap {
+    margin: 0 auto 0 15%;
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.accelerating .wrap h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.accelerating .wrap .acceler-list li {
+    box-sizing: border-box;
+    width: 300px;
+    height: 320px;
+    float: left;
+    background: #fff;
+    box-shadow: 1px 2px 5px gray;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.accelerating .wrap .acceler-list li h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.accelerating .wrap .acceler-list li .state.end {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    padding-top: 5px;
+    background: gray;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 90px;
+}
+
+.accelerating .wrap .acceler-list li time {
+    display: block;
+    margin-top: 10px;
+    color: gray;
+}
+
+.accelerating .wrap .acceler-list li:hover {
+    background: linear-gradient( rgba(0, 112, 112, 0.5), rgba(0, 112, 112, 0.5)), url('./image/thumbnail\ \(11\).jpeg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+.accelerating .wrap .acceler-list li:hover .date {
+    color: #fff;
+}
+
+.accelerating .viewAll {
+    position: absolute;
+    top: 120px;
+    right: 280px;
+}
+
+.accelerating .viewAll::before {
+    content: '+';
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+
+/* footer */
+
+footer {
+    border-top: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+footer .wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+footer .wrap .footer-list li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+footer .wrap p {
+    color: gray;
+}
+
+footer .wrap .site-info {
+    margin-top: 30px;
+}
+
+footer .wrap .site-info li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+footer .wrap .site-info li+li::before {
+    content: '|';
+    margin-right: 5px;
+    color: gray;
+}
+
+footer .site-info li>address {
+    display: inline;
+    color: gray;
+}
+
+footer .wrap .footer-logo {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 218px;
+    height: 27px;
+    font-size: 0;
+    background: url(./image/sprite-layout.png) -191px 0;
 }
