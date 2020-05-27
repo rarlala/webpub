@@ -1,0 +1,85 @@
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header,
+aside,
+section,
+footer {
+  width: 100%;
+  display: block;
+  height: 10vh;
+  border: 1px solid #000;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 60px;
+  box-sizing: border-box;
+}
+
+aside {
+  height: 30vh;
+  line-height: 30vh;
+}
+
+section {
+  height: 45vh;
+  line-height: 45vh;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+}
+
+
+/* PC 화면 기준 */
+
+@media screen and (min-width: 1024px) {
+
+  main {
+    overflow: hidden;
+  }
+
+  aside {
+    width: 34%;
+    float: left;
+  }
+
+  section {
+    width: 64%;
+    float: right;
+  }
+
+}
+
+/* Tablet 화면 기준 */
+
+@media screen and (min-width: 768px) and (max-width:1023px) {}
+
+/* Mobile 화면 기준 */
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+
+  aside,
+  section {
+    float: none;
+  }
+
+  body,
+  header,
+  footer,
+  aside,
+  section {
+    width: 100%;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 639px) {}
