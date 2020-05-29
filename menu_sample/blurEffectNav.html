@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blur Effect Nav</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play">
+  <link rel="stylesheet" href="../reset.css">
+
+  <style>
+    body {
+      font: 16px 'Play';
+      color: #555;
+      background: url('../naver-travel/img/3.jpg') no-repeat;
+      background-size: cover;
+    }
+
+    .blur-nav {
+      height: 50px;
+      margin: 40px 0;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .blur-nav ul {
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .blur-nav li {
+      float: left
+    }
+
+    .blur-nav li a {
+      position: relative;
+      display: block;
+      color: #888;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 35px;
+      text-shadow: 0 1px 0 #000;
+      z-index: 2;
+      transition: all 0.15s;
+    }
+
+    .blur-nav ul:hover a {
+      color: transparent;
+      text-shadow: 0 0 10px #ccc;
+    }
+
+    .blur-nav ul:hover a:hover {
+      color: #fff;
+      line-height: 43px;
+      text-shadow: 0 1px 0 #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="blur-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">Level Test</a></li>
+      <li><a href="#">Online</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </section>
+</body>
+
+</html>
