@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;500;600&display=swap');
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.5rem/1 'Raleway', sans-serif;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background: #fff;
+  transition: all 0.3s;
+  background: #fff;
+  z-index: 10;
+}
+
+header .logo {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 160px;
+  height: 130px;
+  margin-left: -80px;
+  background: url('../img/logo1.png') no-repeat;
+  background-size: contain;
+}
+
+header .gnb {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .gnb li a {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Poiret One', cursive;
+  color: #222;
+  line-height: 3.3em;
+  transition: all 0.2s;
+}
+
+header .gnb li i {
+  margin-right: 5px;
+}
+
+header .gnb li a:hover {
+  transform: translateX(10px);
+  color: #1d75b5
+}
+
+header .sns {
+  position: absolute;
+  bottom: 30px;
+  left: 33%;
+}
+
+header .sns a {
+  margin-right: 0.5em;
+}
+
+header .sns i {
+  font-size: 2rem;
+}
+
+/* nav */
+nav {
+  position: relative;
+  width: 85%;
+  height: 35px;
+  margin-left: 15%;
+  background: #212121;
+  transition: all 0.3s;
+}
+
+nav>a {
+  position: absolute;
+  top: 6px;
+}
+
+nav>a:nth-child(1) {
+  left: 0;
+}
+
+nav>a:nth-child(2) {
+  left: 150px;
+}
+
+nav>a:nth-child(3) {
+  right: 85px;
+}
+
+nav>a:nth-child(4) {
+  right: 5px;
+}
+
+/* section */
+
+section {
+  position: relative;
+  width: 85%;
+  margin-left: 15%;
+}
+
+section article {
+  float: left;
+  height: 175px;
+  transition: all 0.5s;
+  animation: scale 1s a;
+}
+
+/* article 박스크기 */
+
+section article {
+  width: 20%;
+  background: #81bbe4;
+}
+
+section .m-bg {
+  width: 60%;
+  height: 350px;
+}
+
+section article:nth-child(2),
+section article:nth-child(6),
+section article:nth-child(9) {
+  width: 40%
+}
+
+article div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* bg 이미지 공통 css */
+
+article .bg {
+  background-size: cover;
+}
+
+article .bg h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: scale(10);
+  transition: all 1s;
+}
+
+article .bg1 h2 {
+  bottom: -20px;
+  font-size: 12rem;
+  font-weight: 600;
+  opacity: 1;
+  transform: scale(1);
+  text-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
+}
+
+article .bg:hover h2 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+article .bg1:hover h2 {
+  transform: scale(1.1);
+}
+
+article .bg1 {
+  background-image: url(../img/img01.png);
+}
+
+article .bg2 {
+  background-image: url(../img/img02.png);
+}
+
+article .bg3 {
+  background-image: url(../img/img08.png);
+}
+
+article .bg4 {
+  background-image: url(../img/img04.png);
+}
+
+article .bg5 {
+  background-image: url(../img/img05.png);
+}
+
+article .bg6 {
+  background-image: url(../img/img06.png);
+}
+
+article .bg7 {
+  background-image: url(../img/img07.png);
+}
+
+/* text */
+
+article .text {
+  padding: 2.6em 2em;
+  box-sizing: border-box;
+}
+
+article:nth-child(2) .text,
+article:nth-child(6) .text {
+  background: #1d75b5;
+}
+
+article .text i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

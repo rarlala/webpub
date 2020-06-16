@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+body {
+  font-size: 1.4rem;
+}
+
+.inner {
+  width: 100%;
+  padding: 1.4em 1em 1em;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  color: #11476f;
+  margin-bottom: 0.9em;
+}
+
+section .btn-more {
+  width: 40px;
+  height: 25px;
+}
+
+section .btn-more i {
+  font-size: 2rem;
+}
+
+section .btn-more:hover {
+  transform: translateX(15px);
+}
+
+/*header*/
+#main-header {
+  height: 4.2em;
+}
+
+#main-header .logo {
+  line-height: 2.5em;
+  font-size: 2.4rem;
+}
+
+#main-header .sns {
+  display: none;
+}
+
+#main-header .menu {
+  top: 1.5em;
+  right: 1em;
+}
+
+#main-header .menu i {
+  font-size: 2rem;
+}
+
+#main-header .gnb {
+  top: 4.5em;
+  right: 0;
+  width: 100%;
+  padding: 1.5em;
+}
+
+/*main-visual*/
+#main-visual .title-group {
+  width: 100%;
+}
+
+#main-visual .title-group>h1 {
+  font-size: 3rem;
+}
+
+/*#project*/
+#project .pro-list li {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+#project .pro-list li figure {
+  height: 10em;
+  margin-bottom: 1em;
+}
+
+#project .pro-list li figure:before {
+  transform: skewX(-68deg);
+  transform-origin: 60% 0;
+}
+
+#project .pro-list li h3 {
+  font-size: 1.6rem;
+}
+
+/*slogan*/
+#slogan {
+  height: 11em;
+}
+
+#slogan .title-group {
+  width: 80%;
+}
+
+#slogan strong {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+#slogan span {
+  font-size: 1.6rem;
+}
+
+/*news*/
+#latest-news .news-group {
+  margin-top: 1em;
+}
+
+#latest-news .news-group li {
+  width: 100%;
+  margin-left: 0;
+  padding-bottom: 1em;
+}
+
+#latest-news .news-group li figure {
+  position: relative;
+  overflow: hidden;
+  height: 10em;
+}
+
+#latest-news .news-group li figure img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#latest-news .news-group li .title {
+  margin-top: 0.6em;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+#latest-news .news-group li .btn-view {
+  width: 140px;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+#latest-news .news-group li .btn-view span {
+  width: 90px;
+}
+
+#latest-news .news-group li .btn-view i {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  transition: all 0.2s;
+}
+
+#latest-news .news-group li .btn-view:hover i {
+  left: 110px;
+}
+
+/*podcast*/
+#podcast .podcast-group {
+  margin-top: 2.5em;
+  overflow: hidden;
+}
+
+#podcast .podcast-group li {
+  width: 50%;
+  height: 230px;
+  padding: 0 20px;
+  margin-left: 0;
+  box-sizing: border-box
+}
+
+#podcast .podcast-group li figure {
+  width: 80px;
+  height: 80px;
+}
+
+#podcast .podcast-group li h3 {
+  font-size: 1.5rem;
+}
+
+#podcast .podcast-group li h3>span {
+  font-size: 1.4rem;
+}
+
+#podcast .podcast-group li .text-group {
+  margin-top: 1em;
+}
+
+footer .inner {
+  padding: 1em 0;
+}
